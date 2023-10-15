@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="img/faviconico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container-nav">
+            <a href="#" class="logo"><img src="img/logocodoshop.jpg" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosostros</a></li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="novedades">
+            <p>!DESCUENTOS DESDE UN 30% PARA JUBILADOS Y 20 % POR FECHA DE CUMPLEAÑOS!</p>
+        </div>
+        <!--CARRUSEL PROPAGANDA-->
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img/propaganda ropa.jpg" alt="Imagen 1">
+                <img src="img/propaganda1.jpg" alt="Imagen 2">
+            </div>
+        </div>
+        <!--------------------------->
+        
+        <div class="info-container">
+            <div class="info">
+                <img src="img/escudo.png" alt="info 1">
+                <p>¡Seguridad en tus compras!</p>
+             </div>
+        
+             <div class="info">
+                <img src="img/cuotas4.png" alt="info 2">
+                <p>¡Establecimiento adherido!</p>
+             </div>
+        
+             <div class="info">
+                <img src="img/cambio.png" alt="info 3">
+                <p>¡Cambios sin cargo de envio!</p>
+             </div>
+        
+        
+        </div>
+        <div class="tiendas-container">
+            <div class="tienda">
+                <img src="imagen publicidad/remera1.webp" alt="Tienda 1">
+                <h3>Tienda 1</h3>
+                <p>Descripción de la tienda 1.</p>
+            </div>
+            
+            <div class="tienda">
+                <img src="imagen publicidad/remera2.webp" alt="Tienda 2">
+                <h3>Tienda 2</h3>
+                <p>Descripción de la tienda 2.</p>
+            </div>
+        
+            <div class="tienda">
+                <img src="imagen publicidad/chaqueta-deporte-ropa.jpg" alt="Tienda 3">
+                <h3>Tienda 2</h3>
+                <p>Descripción de la tienda 2.</p>
+            </div>
+        
+            <div class="tienda">
+                <img src="imagen publicidad/short+remera.jpg" alt="Tienda 4">
+                <h3>Tienda 2</h3>
+                <p>Descripción de la tienda 2.</p>
+            </div>
+            
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        <!--ES EL SCRIPT PARA EL SLIDER DE LA PAGINA-->
+        <script>
+            
+            const slider = document.querySelector('.slider');/* Selecciona el elemento HTML con la clase "slider" y lo almacena en la variable 'slider'.*/
+            
+            const images = document.querySelectorAll('.slider img');// Selecciona todos los elementos HTML con la etiqueta 'img' dentro del elemento con clase "slider" y los almacena en la variable 'images'.
+            
+            let currentIndex = 0;// Inicializa una variable 'currentIndex' para llevar un seguimiento del índice de la imagen actual.
+        
+            function nextSlide() { // Esta función se llama cuando se quiere pasar a la siguiente imagen en el slider.
+                
+                // Calcula el nuevo índice sumando 1 al índice actual y tomando el módulo del número total de imágenes.
+                // Esto asegura que el índice se mantenga dentro del rango de imágenes disponibles.
+                currentIndex = (currentIndex + 1) % images.length;
+            
+                updateSlider();  // Llama a la función 'updateSlider' para actualizar la posición del slider en la pantalla.
+            }
+        
+            function updateSlider() {// Esta función actualiza la posición del slider en la pantalla.
+        
+                const translateX = -currentIndex * 100; // Calcula cuánto se debe trasladar el slider horizontalmente para mostrar la imagen actual.
+                slider.style.transform = `translateX(${translateX}%)`; // Aplica una transformación CSS al elemento 'slider' para moverlo horizontalmente.
+            }
+        
+            setInterval(nextSlide, 8000); // Cambia de imagen cada 8 segundos
+        </script>
+        <!--FIN DEL SCRIPT-->
+    </main>
+
+    <footer class="footer">
+        <span>
+            Copyright &copy;2023 Todos los derechos reservados | By CodoShop
+        </span>
+    </footer>
+    
+</body>
+</html>

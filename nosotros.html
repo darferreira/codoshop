@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="shortcut icon" href="img/faviconico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="header-styles.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container-nav">
+            <a href="#" class="logo"><img src="img/logocodoshop.jpg" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosostros</a></li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+
+    <main>
+    <section class="page-header-section about-1">
+        <div class="section-header-wrapper no-padding-bottom">
+            <h1 class="title white-text">Sobre nosotros</h1>
+            <p class="section-description white-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis, veritatis dicta animi, velit pariatur suscipit laboriosam nihil, beatae error molestiae quidem nulla delectus sequi? Nulla numquam iusto ipsa neque.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="slider">
+        <h2 class="slider_heading">Nuestro Equipo</h2>
+        <div class="slider_container container">
+            <img src="img/left-arrow.svg" class="slider_arrow" id="before" alt="flecha izquierda">
+            <section class="slider_body slider_body--show" data-id="1">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Dario Ferreira</h2>
+                    <p class="slider_review">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem dolore eius, quibusdam, sint vel magni dolorum soluta esse debitis nesciunt tempora ipsam fugit aperiam quisquam ipsum dolor, eum consectetur?
+                    </p>
+                </div>
+    
+                <figure class="slider_picture">
+                    <img src="img/staff-image10.jpg" class="slider_img" alt="foto de una persona">
+                </figure>
+            </section>
+    
+            <section class="slider_body" data-id="2">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Max Farinaro</h2>
+                    <p class="slider_review">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus a, quae provident tenetur eligendi laborum! Cumque assumenda ex reiciendis maiores! Beatae nulla repellendus vitae ab adipisci mollitia quis minima reprehenderit!
+                    </p>
+                </div>
+    
+                <figure class="slider_picture">
+                    <img src="img/staff-image2.jpg" class="slider_img" alt="foto de una persona">
+                </figure>
+            </section>
+    
+            <section class="slider_body" data-id="3">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Lucas Lopez</h2>
+                    <p class="slider_review">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quae quam animi iste non vero
+                        cupiditate ipsa facilis, possimus aliquid dignissimos quos illum veniam. Aut omnis ipsam ab
+                        adipisci ullam.
+                    </p>
+                </div>
+    
+                <figure class="slider_picture">
+                    <img src="img/staff-image3.jpg" class="slider_img" alt="foto de una persona">
+                </figure>
+            </section>
+    
+            <section class="slider_body" data-id="4">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Jonatan Cardoso</h2>
+                    <p class="slider_review">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint tenetur cupiditate, officiis quas
+                        quidem aut. Recusandae architecto pariatur officiis id repellendus laudantium aliquam tempore
+                        distinctio, error voluptate corporis accusamus eveniet!
+                    </p>
+                </div>
+    
+                <figure class="slider_picture">
+                    <img src="img/staff-image4.jpg" class="slider_img" alt="foto de una persona">
+                </figure>
+            </section>
+    
+    
+            <img src="img/right-arrow.svg" class="slider_arrow" id="next" alt="flecha derecha">
+        </div>
+    </section>
+
+        <section class="section color-3">
+            <div class="section-header-wrapper no-padding-bottom">
+                <div class="section-small-header">¿Alguna propuesta?</div>
+                <h2 class="section-header">Contacta con nosotros</h2>
+                <p class="section-description">
+                    Si no estas seguro de si somos lo que buscas no dudes en contactar con nosotros y hablaremos de tu
+                    proyecto y su viabilidad.
+                </p>
+                <a href="contacto.html" class="button contact-ready-button w-button">Contactar</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>
+            Copyright &copy;2023 Todos los derechos reservados | By CodoShop
+        </span>
+    </footer>
+    <script src="sliders.js"></script>
+</body>
+</html>
