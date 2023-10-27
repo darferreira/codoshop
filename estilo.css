@@ -485,7 +485,7 @@ th, td {
     background-color: #d45500;
     text-align: center;
     padding:7px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 .error{
@@ -561,6 +561,7 @@ th, td {
 
     #menu:checked ~ .navbar {
         display: initial;
+        z-index: 1;
     }
     
     .logo {
@@ -571,6 +572,9 @@ th, td {
         min-width: 100%;
     }
 
+    .destacados, .novedades p {
+        font-size: 22px;
+     }
 
 }
 
@@ -715,7 +719,7 @@ th, td {
         font-size: 16px;
     }
 
-    .destacados{
-       font-size: 20px;
+    .destacados, .novedades p {
+       font-size: 18px;
     }
 }
