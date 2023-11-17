@@ -389,7 +389,7 @@ th, td {
   
   .section-header {
     margin-top: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     color: #2e323c;
     font-size: 40px;
   }
@@ -398,6 +398,8 @@ th, td {
     color: #9096a4;
     font-size: 16px;
     line-height: 28px;
+    max-width: 70%;
+    margin: auto;
   }
 
   .white-text {
@@ -660,26 +662,6 @@ th, td {
         width: auto;
     }
 
-
-    /*Seccion contactar*/
-    .section-header {
-        margin-top: 24px;
-        margin-bottom: 8px;
-        font-size: 20px;
-        line-height: 32px;
-    }
-
-    .section-small-header {
-        font-size: 10px;
-        line-height: 16px;
-        letter-spacing: 3px;
-    }
-
-    .section-description {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
     .button.contact-ready-button {
         margin-bottom: -40px;
     }
@@ -721,5 +703,15 @@ th, td {
 
     .destacados, .novedades p {
        font-size: 18px;
+    }
+
+    .slider_body{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .subtitle{
+        text-align: center;
     }
 }
