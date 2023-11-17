@@ -341,7 +341,7 @@ th, td {
 }
 
 .page-header-section.about-1 {
-    background-image: linear-gradient(180deg, rgba(46, 50, 60, 0.5), rgba(46, 50, 60, 0.5)), url("img/banner.jpg");
+    background-image: linear-gradient(180deg, rgba(46, 50, 60, 0.5), rgba(46, 50, 60, 0.5)), url("../img/banner.jpg");
     background-position: 0px 0px, 100% 55%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
